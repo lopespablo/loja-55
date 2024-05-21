@@ -1,0 +1,221 @@
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100; 0,300; 0,400; 0,500; 0,700; 0,900; 1,100; 1,300; 1,400; 1,500; 1,700; 1.900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000; 1.200..1000&família=Roboto:ital,wght@0.100; 0,300; 0,400; 0,500; 0,700; 0,900; 1,100; 1,300; 1,400; 1,500; 1,700; 1.900&família=Rubik:ital,wght@0,300..900; 1.300.900&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/* import */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Roboto", sans-serif ;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+    /* header cima */
+header .headercima{
+    background-color: rgba(0, 0, 0, 0.904);
+    box-shadow:0px 0px 5px rgba(0, 0, 0, 0.295);
+    height: 100%;
+    width: 100%;
+}
+
+header .headercima h1{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+}
+
+header .headercima h1 span{
+    color: rgb(0, 140, 255);
+}
+    /* header cima */
+
+
+    /* PROMOÇAO */
+.animation-container {
+    height: 20px;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.promo-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: animateText 25s linear infinite;
+}
+
+.promo-text p{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: rgb(54, 54, 54);
+    font-weight: 700;
+}
+
+@keyframes animateText {
+    0% {
+      transform: translateX(310%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+    /* PROMOÇAO */
+
+
+    /* header meio */
+header .headermeio{
+    padding: 0px 35px 0px;
+}
+
+header .headermeio .pesqcarr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .headermeio .pesqcarr li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header .headermeio .pesqcarr #barradepesquisa{
+    position: relative;
+}
+
+header .headermeio .pesqcarr #barradepesquisa i{
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    font-size: 17px;
+}
+
+header .headermeio .pesqcarr #barradepesquisa input{
+    height: 45px;
+    width: 490px;
+    border-radius: 13px;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+header .headermeio .pesqcarr #barradepesquisa input:hover{
+    transform: scale(1.02);
+}
+
+header .headermeio .pesqcarr #carrinho i{
+    display: block;
+    font-size: 35px;
+    cursor: pointer;
+    transition: .2s;
+    top: 30%;
+    
+}
+
+header .headermeio .pesqcarr #carrinho i:hover{
+    transform: rotate(10deg);
+    
+}
+    /* header meio */
+
+    /* header final */
+header .headerfinal{
+    padding-top: 20px;
+}
+
+header .headerfinal .nomesitems{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+header .headerfinal .nomesitems li{
+    list-style-type: none;
+}
+
+header .headerfinal .nomesitems li p{
+
+    color: rgb(58, 58, 58);
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+header .headerfinal .nomesitems li p:hover{
+    transform: scale(1.03);
+}
+    /* header final */
+
+    /* main */
+main{
+    padding: 50px 10px;
+}
+
+main .interface .box-produtos ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main .interface .box-produtos ul a{
+    text-decoration: none;
+}
+
+main .interface .box-produtos .produtos li{
+    list-style-type: none;
+    height: 422px;
+    width: 302px;
+    transition: .2s;
+    margin-bottom: 15px;
+}
+
+main .interface .box-produtos .produtos li:hover{
+    border: 1px solid rgb(133, 133, 133);
+}
+
+main .interface .box-produtos .produtos li img{
+    display: block;
+    height: 270px;
+    width: 270px;
+    max-width: 270px;
+    margin: auto;
+}
+
+main .interface .box-produtos .produtos li p,h1{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 2px;
+    text-align: center;
+
+}
+
+
+
+main .interface .box-produtos .produtos li #nome-p{
+    padding-bottom: 16px;
+    color: rgb(124, 124, 124);
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: normal;
+}
