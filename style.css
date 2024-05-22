@@ -270,16 +270,43 @@ main .interface .box-produtos .produtos li #nome-p{
     font-weight: normal;
 }
 
+/* para celular */
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:550px) {
 
-header .headermeio .pesqcarr #barradepesquisa input{
+    header .headermeio .pesqcarr #barradepesquisa input{
 
-    width: 300px;
+        width: 300px;
 
+    }
+    header .propaganda{
+        padding: 0 20px;
+    }
+
+    @keyframes animateText {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
 }
-header .propaganda{
-    padding: 0 20px;
-}
 
+/* fim celecular */
+
+@media screen and (max-width:870px) {
+    
+    .propaganda{
+        padding: 30px;
+    }
+
+    @keyframes animateText {
+        0% {
+          transform: translateX(200%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
 }

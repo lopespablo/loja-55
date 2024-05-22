@@ -22,7 +22,7 @@ function moveSlide(n) {
 
 function autoSlide() {
     moveSlide(1);
-    setTimeout(autoSlide, 8000); // Altere o tempo aqui, se necessário
+    setTimeout(autoSlide, 7000); // Altere o tempo aqui, se necessário
 }
 
 // Inicia o carrossel automático
