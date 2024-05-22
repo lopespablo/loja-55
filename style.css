@@ -15,29 +15,25 @@
 
 body{
     background-color: rgb(255, 255, 255);
-    height: 100%;
+    height: 100vh;
 }
 
     /* header cima */
 header .headercima{
-    background-color: rgba(0, 0, 0, 0.904);
+    background-color: black;
     box-shadow:0px 0px 5px rgba(0, 0, 0, 0.295);
-    height: 100%;
+    height: 100px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-header .headercima h1{
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 40px;
-    font-weight: 900;
-    font-style: normal;
-    color: rgb(255, 255, 255);
+header .headercima img{
+    height: 180px;
+    width: 180px;
 }
 
-header .headercima h1 span{
-    color: rgb(0, 140, 255);
-}
     /* header cima */
 
 
@@ -82,7 +78,7 @@ header .headermeio{
 header .headermeio .pesqcarr{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 header .headermeio .pesqcarr li{
@@ -164,6 +160,62 @@ header .headerfinal .nomesitems li p:hover{
 }
     /* header final */
 
+    /* propaganda */
+.propaganda{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    position: relative;
+    width: 800px; /* Largura fixa do carrossel */
+    height: 400px; /* Altura fixa do carrossel */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Ajustar a largura conforme necessário */
+    height: 100%; /* Ajustar a altura conforme necessário */
+}
+
+.carousel-images img {
+    min-width: 100%; /* Cada imagem ocupa toda a largura do carrossel */
+    height: 100%; /* Altura fixa para as imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço mantendo a proporção */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20%;
+    user-select: none;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+    /* propaganda */
+
     /* main */
 main{
     padding: 50px 10px;
@@ -210,12 +262,24 @@ main .interface .box-produtos .produtos li p,h1{
 
 }
 
-
-
 main .interface .box-produtos .produtos li #nome-p{
     padding-bottom: 16px;
     color: rgb(124, 124, 124);
     font-size: 16px;
     font-family: 'Mulish', sans-serif;
     font-weight: normal;
+}
+
+
+@media screen and (max-width:450px) {
+
+header .headermeio .pesqcarr #barradepesquisa input{
+
+    width: 300px;
+
+}
+header .propaganda{
+    padding: 0 20px;
+}
+
 }
