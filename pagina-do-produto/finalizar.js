@@ -4,6 +4,8 @@ const products = [
     { id: 2, ref:1234, name: "Calça Jeans", price: 89.99, image: "https://thugnine.fbitsstatic.net/img/p/camiseta-the-bite-70920/261749-2.jpg?w=800&h=800&v=202405021042&qs=ignore", description: "Calça jeans de alta qualidade.", otherImages: ["https://thugnine.fbitsstatic.net/img/p/camiseta-the-bite-70920/261751-3.jpg?w=605&h=605&v=202405021042&qs=ignore", "https://thugnine.fbitsstatic.net/img/p/camiseta-the-bite-70920/261751-4.jpg?w=605&h=605&v=202405021042&qs=ignore", "https://thugnine.fbitsstatic.net/img/p/camiseta-the-bite-70920/261751-5.jpg?w=605&h=605&v=202405021042&qs=ignore"] },
 
     { id: 3, ref:1234, name: "Tênis", price: 129.99, image: "https://thugnine.fbitsstatic.net/img/p/camiseta-the-bite-70920/261749-2.jpg?w=800&h=800&v=202405021042&qs=ignore", description: "Tênis confortável para o dia a dia.", otherImages: ["https://thugnine.fbitsstatic.net/img/p/camiseta-the-bite-70920/261751-3.jpg?w=605&h=605&v=202405021042&qs=ignore", "https://thugnine.fbitsstatic.net/img/p/camiseta-the-bite-70920/261751-4.jpg?w=605&h=605&v=202405021042&qs=ignore", "https://thugnine.fbitsstatic.net/img/p/camiseta-the-bite-70920/261751-5.jpg?w=605&h=605&v=202405021042&qs=ignore"] },
+
+    { id: 4, ref:1234, name: "Camisa Kinbo", price: 189.99, image: "https://thugnine.fbitsstatic.net/img/p/camiseta-kimbo-70679/260536-1.jpg?w=1500&h=1500&v=no-value", description: "Camisa confortável para o dia a dia.", otherImages: ["https://thugnine.fbitsstatic.net/img/p/camiseta-the-bite-70920/261751-3.jpg?w=605&h=605&v=202405021042&qs=ignore", "https://thugnine.fbitsstatic.net/img/p/camiseta-the-bite-70920/261751-4.jpg?w=605&h=605&v=202405021042&qs=ignore", "https://thugnine.fbitsstatic.net/img/p/camiseta-the-bite-70920/261751-5.jpg?w=605&h=605&v=202405021042&qs=ignore"] },
 ];
 
 function getProductById(id) {
@@ -41,7 +43,7 @@ function displayProductDetails() {
 
 window.onload = displayProductDetails;
 
-
+// enviar msg
 document.querySelectorAll('.tms').forEach(function(div) {
     div.addEventListener('click', function() {
         this.classList.toggle('selecionado');

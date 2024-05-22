@@ -53,6 +53,13 @@ const products = [
         price: 129.99,
         valor: '4x de 19,99',
         image: "https://thugnine.fbitsstatic.net/img/p/camiseta-the-bite-70920/261749-2.jpg?w=800&h=800&v=202405021042&qs=ignore"
+    },
+    {
+        id:4,
+        name: "Camiseta Kinbo",
+        price: 189.99,
+        valor: '2x de 94,99',
+        image: "https://thugnine.fbitsstatic.net/img/p/camiseta-kimbo-70679/260536-1.jpg?w=1500&h=1500&v=no-value"
     }
     // Adicione mais produtos aqui
 ];
