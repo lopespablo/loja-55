@@ -283,9 +283,15 @@ main .interface .box-produtos .produtos li #nome-p{
         padding: 0 20px;
     }
 
+    .promo-text {
+        position: absolute;
+        white-space: nowrap;
+        animation: animateText 15s linear infinite;
+    }
+
     @keyframes animateText {
         0% {
-          transform: translateX(100%);
+          transform: translateX(117%);
         }
         100% {
           transform: translateX(-100%);
@@ -301,12 +307,5 @@ main .interface .box-produtos .produtos li #nome-p{
         padding: 30px;
     }
 
-    @keyframes animateText {
-        0% {
-          transform: translateX(200%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
+    
 }

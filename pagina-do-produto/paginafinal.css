@@ -75,6 +75,8 @@ main .box{
 main .box-informacoes{
     display: flex;
     align-items: center;
+    justify-content: center;
+    
 }
 
 main .box-informacoes .outras-fotos{
@@ -99,6 +101,9 @@ main .box-informacoes .outras-fotos{
 .foto-principal{
     height: 500px;
     width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .foto-principal img{
@@ -199,3 +204,91 @@ main .box-informacoes .outras-fotos{
 .informacoes .btns .buttons:hover{
     background-color: rgb(37, 37, 255);
 }
+
+
+
+.outras-fotos {
+    position: relative;
+}
+
+.carousel-controls {
+    display: none; /* Esconde os botões de navegação por padrão */
+    justify-content: space-between;
+    width: 564px;
+    position: absolute;
+    top: 220px;
+    left: -248px;
+}
+
+.carousel-btn {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 500px) {
+
+    main .box{
+        padding: 0px 50px;
+    }
+    
+
+    .box-informacoes {
+        flex-direction: column;
+        
+        
+    }
+
+    .foto-principal{
+        height: 450px;
+        width: 450px;
+    }
+
+    .foto-principal img{
+        height: 400px;
+        width: 400px;
+    }
+
+    .carrosel-fotos .fts img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .carousel-controls{
+        width: 350px;
+        top: 248px;
+        left: -140px;
+    }
+
+    .informacoes {
+        height: 400px;
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
+
+@media screen and (max-width: 1120px) {
+    .box-informacoes {
+        flex-direction: column;
+    }
+
+    .carrosel-fotos {
+        display: none; /* Esconde o carrossel de imagens na visualização em coluna */
+    }
+
+    .carousel-controls {
+        display: flex;
+        justify-content: space-between; /* Exibe os botões de navegação na visualização em coluna */
+    }
+}
+
+

@@ -60,7 +60,7 @@ const products = [
         price: 189.99,
         valor: '2x de 94,99',
         image: "https://thugnine.fbitsstatic.net/img/p/camiseta-kimbo-70679/260536-1.jpg?w=1500&h=1500&v=no-value"
-    }
+    },
     // Adicione mais produtos aqui
 ];
 
