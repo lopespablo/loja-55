@@ -232,7 +232,7 @@ main .box-informacoes .outras-fotos{
 @media screen and (max-width: 500px) {
 
     main .box{
-        padding: 0px 50px;
+        padding: 0px 0px;
     }
     
 
@@ -243,13 +243,13 @@ main .box-informacoes .outras-fotos{
     }
 
     .foto-principal{
-        height: 450px;
-        width: 450px;
+        height: 380px;
+        width: 380px;
     }
 
     .foto-principal img{
-        height: 400px;
-        width: 400px;
+        height: 350px;
+        width: 350px;
     }
 
     .carrosel-fotos .fts img{
