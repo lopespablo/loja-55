@@ -1,4 +1,7 @@
-// Código adicional para enviar mensagem e selecionar tamanhos
+function selecionarTamanho(element) {
+    element.classList.toggle('selecionado');
+}
+
 document.querySelectorAll('.tms').forEach(function(div) {
     div.addEventListener('click', function() {
         this.classList.toggle('selecionado');
