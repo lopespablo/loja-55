@@ -246,12 +246,13 @@ main .interface .box-produtos .produtos li:hover{
     border: 1px solid rgb(133, 133, 133);
 }
 
-main .interface .box-produtos .produtos li img{
+main .interface .box-produtos .produtos .ftlistap{
     display: block;
-    height: 270px;
-    width: 270px;
+    height: 250px;
+    width: 250px;
     max-width: 270px;
     margin: auto;
+    padding: 10px;
 }
 
 main .interface .box-produtos .produtos li p,h1{
